@@ -1,0 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+
+body {
+  font-family: 'Slabo 27px', serif;
+}
+
+p {
+  border-bottom: 1px solid grey;
+  font-size: 1.2em;
+}
+
+h2 {
+  color: #FF00FF;
+  text-decoration: underline;
+}

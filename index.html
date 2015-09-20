@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Intro to CSS</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1 id="mainhead">Intro to CSS</h1>
+  <em>An introduction and cheatsheet</em>
+  <h2>CSS Rules!</h2>
+  <p class="bodypara">CSS rules! because we can use it to set the visual style of our HTML documents, and create unique visual presentations that convey character while communicating visual hierarchy. We do this by defining <strong>CSS rules</strong> that tell the browser how to display our HTML content. A document will usually include many CSS rules, each made up of a <em>selector</em> followed by a list of <em>properties</em> and <em>values</em>. The <em>selector</em> tells the browser which page elements we want to apply a particular visual style to. The <em>properties</em> and <em>values</em> then define the visual elements (colors, fonts, sizes and more!) that make up the style. The format of the rule is always as follows:<br>
+  <code>
+    selector { <br>
+      property1: value1;<br>
+      property2: value2;<br>
+    }<br>
+  </code>
+  (Note: line breaks are optional, but recommended).</p>
+  <h2>Selectors: tag, id, and class</h2>
+  <p class="bodypara">We can select HTML elements to style in a several ways, by using different formats for our selector. We can select a tag by using the tag itself as the selector. For example:<br>
+    <code>
+      h1 { <br>
+        color: red;<br>
+      }<br>
+    </code>
+  will make all h1 tags red. We can select an element by id by using the # character and then the id we want to select. For example:<br>
+  <code>
+    #mainhead { <br>
+      color: red;<br>
+    }<br>
+  </code>
+  will make the element with the id "mainhead" red. We can select an element by class by using the . character and then the class we want to select. For example:<br>
+  <code>
+    .bodypara { <br>
+      color: red;<br>
+    }<br>
+  </code>
+  will make all the elements with the class "bodypara" red.</p>
+  <h2>Selector Cheat Sheet</h2>
+  <ul>
+    <li><strong>tag</strong> - selects all instances of the given tag (ex: h1)</li>
+    <li><strong>#id</strong> - selects all instances of the given id (ex: #mainhead)</li>
+    <li><strong>.class</strong> - selects all instances of the given class (ex: .bodypara)</li>
+  </ul>
+  <h2>Cascading and Inheritance</h2>
+  <p class="bodypara">When deciding how to display our HTML documents, our browser looks at several sources of css rules. These include:</p>
+    <ul>
+      <li>The browser's default stylesheet</li>
+      <li>External stylesheet files included in the HTML with the link element</li>
+      <li>The style element of the HTML document</li>
+    </ul>
+    <p class="bodypara">As long as these rules don't conflict, the browser will apply them all to the selected element. In the case of a conflict (for example, two different color settings for the same element) the browser will resolve the conflict as follows:</p>
+    <ul>
+      <li>Included stylesheets over-ride the default style</li>
+      <li>Rules listed in later stylesheets over-ride earlier stylesheets</li>
+      <li>The style section over-rides external stylesheets</li>
+    </ul>
+    <p class="bodypara">Elements also inherit some rules from their ancestors. If a rule is set that conflicts with the inherited rule, the inherted rule is over-rided.</p>
+</body>
+</html>
